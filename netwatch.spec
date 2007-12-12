@@ -1,6 +1,6 @@
 Name: netwatch 
 Version: 1.0b
-Release: 0.pre3.2mdk
+Release: %mkrel 0.pre3.2
 %define realver 1.0b.pre3
 Summary: Ethernet/PPP IP Packet Monitor 
 License: GPL 
