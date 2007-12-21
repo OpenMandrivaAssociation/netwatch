@@ -8,6 +8,7 @@ Group: Monitoring
 Source: ftp://ftp.slctech.org/pub/netwatch-%realver.src.tar.bz2 
 Patch0: %name-include.patch.bz2
 URL: http://www.slctech.org/~mackay/netwatch.html
+BuildRoot: %_tmppath/%name-%version-root
 BuildRequires: ncurses-devel
 
 %description 
