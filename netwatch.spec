@@ -7,6 +7,7 @@ License:	GPLv2
 Group:		Monitoring
 Source0:	http://www.slctech.org/~mackay/NETWATCH/%{name}-%{version}-2.tgz
 Patch0:		netwatch-include.patch
+Patch1:     netwatch-fix_build_open.patch 
 URL:		http://www.slctech.org/~mackay/netwatch.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	ncurses-devel
@@ -20,6 +21,7 @@ Router statistics and summary charts are available.
 %prep
 %setup -q
 %patch0
+%patch1
 
 %build
 %configure2_5x
