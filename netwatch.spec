@@ -7,6 +7,7 @@ License:	GPLv2
 Group:		Monitoring
 Source0:	http://www.slctech.org/~mackay/NETWATCH/%{name}-%{version}-2.tgz
 Patch0:		netwatch-include.patch
+# Fix a bug which causes build to fail - misc 2008/09
 Patch1:		netwatch-fix_build_open.patch 
 URL:		http://www.slctech.org/~mackay/netwatch.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
