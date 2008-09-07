@@ -7,7 +7,7 @@ License:	GPLv2
 Group:		Monitoring
 Source0:	http://www.slctech.org/~mackay/NETWATCH/%{name}-%{version}-2.tgz
 Patch0:		netwatch-include.patch
-Patch1:     netwatch-fix_build_open.patch 
+Patch1:		netwatch-fix_build_open.patch 
 URL:		http://www.slctech.org/~mackay/netwatch.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	ncurses-devel
@@ -28,10 +28,10 @@ Router statistics and summary charts are available.
 %make
 
 %install
-install -d -m 755 %{buildroot}%{_bindir}
+install -d -m 755 %{buildroot}%{_sbindir}
 install -d -m 755 %{buildroot}%{_mandir}/man1
-install -m 755 netwatch %{buildroot}%{_bindir}
-install -m 755 netresolv %{buildroot}%{_bindir}
+install -m 755 netwatch %{buildroot}%{_sbindir}
+install -m 755 netresolv %{buildroot}%{_sbindir}
 install -m 644 netwatch.1 %{buildroot}%{_mandir}/man1
 
 %clean
@@ -40,7 +40,7 @@ install -m 644 netwatch.1 %{buildroot}%{_mandir}/man1
 %files
 %defattr(-,root,root,-)
 %doc README README.performance TODO CHANGES BUGS
-%{_bindir}/%{name}
-%{_bindir}/netresolv
+%{_sbindir}/%{name}
+%{_sbindir}/netresolv
 %{_mandir}/man1/%{name}.1*
 
