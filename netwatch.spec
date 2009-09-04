@@ -1,7 +1,7 @@
 Name:		netwatch 
 Summary:	Ethernet/PPP IP Packet Monitor 
 Version:	1.2.0
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 # Headers suggest some code is from 'statnet' which is GPLv2
 License:	GPLv2
 Group:		Monitoring
