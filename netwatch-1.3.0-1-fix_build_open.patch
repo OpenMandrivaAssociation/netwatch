@@ -1,0 +1,13 @@
+Index: netwatch.c
+===================================================================
+--- netwatch.c
++++ netwatch.c	2008-09-07 01:02:33.000000000 +0200
+@@ -2713,7 +2713,7 @@
+       work->plog = open (nam, O_APPEND | O_WRONLY);
+       if (work->plog < 0)
+       {
+-	work->plog = open (nam, O_APPEND | O_CREAT | O_WRONLY);
++	work->plog = open (nam, O_APPEND | O_CREAT | O_WRONLY, S_IRWXU);
+ 	st = write (work->plog, &starttime, sizeof (starttime));
+ 	st = write (work->plog, &simmagic, sizeof (simmagic));
+       }

@@ -1,0 +1,14 @@
+Index: netwatch.c
+===================================================================
+--- netwatch.c
++++ netwatch.c	2010-03-12 08:33:42.000000000 +0100
+@@ -151,7 +151,8 @@
+ #include "netresolv.h"
+ #include "netwatch.h"
+ 
+-extern int errno;
++//extern int errno ;
++#include <time.h>
+ 
+ #define MAXFILENAME 256
+ char *version = VERSION;
