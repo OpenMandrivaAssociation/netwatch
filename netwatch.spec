@@ -9,7 +9,7 @@ Source0:	http://www.slctech.org/~mackay/NETWATCH/%{name}-%{version}-1.tgz
 Patch0:		netwatch-1.3.0-1-include.patch
 # Fix a bug which causes build to fail - misc 2008/09
 Patch1:		netwatch-1.3.0-1-fix_build_open.patch 
-URL:		http://www.slctech.org/~mackay/netwatch.html
+URL:		https://www.slctech.org/~mackay/netwatch.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	ncurses-devel
 
