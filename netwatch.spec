@@ -11,6 +11,11 @@ Patch0:		netwatch-1.3.0-1-include.patch
 Patch1:		netwatch-1.3.0-1-fix_build_open.patch 
 URL:		https://www.slctech.org/~mackay/netwatch.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ncurses-devel
 
 %description 
